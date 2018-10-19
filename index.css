@@ -1,0 +1,506 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes writingpen {
+  0% {
+    -moz-transform: rotate(0);
+    left: 0
+  }
+  10%, 30% {
+    -moz-transform: rotate(-30deg);
+    left: -2px
+  }
+  20%, 40% {
+    -moz-transform: rotate(-25deg);
+    left: 2px
+  }
+  100% {
+    -moz-transform: rotate(0);
+    left: 0
+  }
+}
+
+@-webkit-keyframes writingpen {
+  0% {
+    -webkit-transform: rotate(0);
+    left: 0
+  }
+  10%, 30% {
+    -webkit-transform: rotate(-30deg);
+    left: -2px
+  }
+  20%, 40% {
+    -webkit-transform: rotate(-25deg);
+    left: 2px
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    left: 0
+  }
+}
+
+@keyframes writingpen {
+  0% {
+    transform: rotate(0);
+    left: 0
+  }
+  10%, 30% {
+    transform: rotate(-30deg);
+    left: -2px
+  }
+  20%, 40% {
+    transform: rotate(-25deg);
+    left: 2px
+  }
+  100% {
+    transform: rotate(0);
+    left: 0
+  }
+}
+
+@keyframes expandAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px)
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+  70% {
+    transform: translateY(20px)
+  }
+  80% {
+    transform: translateY(0)
+  }
+  90% {
+    transform: translateY(10px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+@keyframes collapseAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px)
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px)
+  }
+  80% {
+    transform: translateY(-10px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.lol-button {
+  cursor: pointer;
+  font: 11px/13px Arial, Verdana, Helvetica, Geneva, sans-serif;
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  display: block !important;
+  padding: 21px 13px 21px 48px;
+  border-radius: 30px;
+  background: -moz-linear-gradient(45deg, #f498a8 0%, #eed29b 100%);
+  background: -webkit-linear-gradient(45deg, #f498a8 0%, #eed29b 100%);
+  background: linear-gradient(45deg, #f498a8 0%, #eed29b 100%);
+  width: 195px;
+  height: 65px;
+  box-sizing: border-box;
+  transition: all ease 1s;
+  box-shadow: 0 3px 10px #0000004d;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #333333;
+  font-size: 18px;
+  line-height: 23px;
+}
+.lol-button::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 20px;
+  top: 21px;
+  background: url('data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Y2lyY2xlIHN0eWxlPSJmaWxsOiM0NzRGNzA7IiBjeD0iMjU2IiBjeT0iMjU2IiByPSIyNTYiLz4KPGc+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkY0RjZGOyIgZD0iTTQ0Ny42NjcsMzQ5LjI3SDczLjk4OGMtMTcuMTI3LDAtMzEuMDEtMTMuODg0LTMxLjAxLTMxLjAxVjc2LjQ2MSAgIGMwLTE3LjEyNywxMy44ODQtMzEuMDEsMzEuMDEtMzEuMDFoMzczLjY4YzE3LjEyNywwLDMxLjAxLDEzLjg4NCwzMS4wMSwzMS4wMXYyNDEuNzk3ICAgQzQ3OC42NzgsMzM1LjM4NSw0NjQuNzk0LDM0OS4yNyw0NDcuNjY3LDM0OS4yN3oiLz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRjRGNkY7IiBkPSJNMjM4Ljk4Myw0MjYuNzgzbC02NS43MDUtODguNDEybDg3LjU1LTExNy44MDZsODcuNTUsMTE3LjgwNmwtNjUuNzA1LDg4LjQxMiAgIEMyNzEuNzg5LDQ0MS40MjcsMjQ5Ljg2NSw0NDEuNDI3LDIzOC45ODMsNDI2Ljc4M3oiLz4KPC9nPgo8Zz4KCTxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTQ5LjEzMSwyMDguNTk2aC00My42Mjd2NTIuOTEzYzAsNC4wMjktNC41NTYsNi4xMzItOS4yODYsNi4xMzJjLTQuNTU1LDAtOS4yODYtMi4xMDItOS4yODYtNi4xMzMgICBWMTQ1LjUyMWMwLTQuMjA1LDQuNzMtNS45NTcsOS4yODYtNS45NTdjNC43MywwLDkuMjg2LDEuNzUyLDkuMjg2LDUuOTU3djQ4LjM1N2g0My42Mjd2LTQ4LjM1N2MwLTQuMjA1LDQuNzMtNS45NTcsOS4yODYtNS45NTcgICBjNC43MywwLDkuMjg2LDEuNzUyLDkuMjg2LDUuOTU3djExNS45ODdjMCw0LjAyOS00LjU1NSw2LjEzMy05LjI4Niw2LjEzM2MtNC41NTYsMC05LjI4Ni0yLjEwMi05LjI4Ni02LjEzM1YyMDguNTk2eiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yMDkuMzk4LDE5Ni4xNTdoMjYuOTgxYzMuODU1LDAsNi4xMzMsMy41MDUsNi4xMzMsNy41MzRjMCwzLjMyOS0xLjkyOCw3LjE4NC02LjEzMyw3LjE4NGgtMjYuOTgxICAgdjQwLjI5OGg1Mi4wMzZjMy44NTQsMCw2LjEzMywzLjg1NSw2LjEzMyw4LjQxYzAsMy44NTUtMS45MjgsOC4wNTktNi4xMzMsOC4wNTloLTYyLjM3NGMtNC4wMjksMC04LjIzNS0yLjEwMi04LjIzNS02LjEzM1YxNDUuNjk2ICAgYzAtNC4wMyw0LjIwNS02LjEzMyw4LjIzNS02LjEzM2g2Mi4zNzRjNC4yMDUsMCw2LjEzMyw0LjIwNSw2LjEzMyw4LjA1OWMwLDQuNTU2LTIuMjc4LDguNDEtNi4xMzMsOC40MWgtNTIuMDM2VjE5Ni4xNTd6Ii8+Cgk8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTI5MC42OSwyNjcuNjQxYy00LjAyOSwwLTguMjM1LTIuMTAyLTguMjM1LTYuMTMzVjE0NS41MjFjMC00LjIwNSw0LjczLTUuOTU3LDkuMjg2LTUuOTU3ICAgYzQuNzMsMCw5LjI4NiwxLjc1Miw5LjI4Niw1Ljk1N3YxMDUuNjVoNDUuNTU0YzMuNjc5LDAsNS42MDYsNC4wMjksNS42MDYsOC4yMzVjMCw0LjAzLTEuOTI3LDguMjM1LTUuNjA2LDguMjM1SDI5MC42OVYyNjcuNjQxeiIvPgoJPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0zNjYuMDI1LDE0NS41MjFjMC0zLjE1NCwyLjgwMy01Ljk1Nyw3LjE4NC01Ljk1N2gzNC4xNjZjMjEuNTUxLDAsMzguMzcxLDEwLjMzNywzOC4zNzEsMzguNTQ1ICAgdjEuNDAxYzAsMjguMDM0LTE3LjM0NiwzOC43MjEtMzkuNDIyLDM4LjcyMWgtMjEuNzI1djQzLjI3N2MwLDQuMDI5LTQuNTU2LDYuMTMzLTkuMjg2LDYuMTMzYy00LjU1NSwwLTkuMjg2LTIuMTAyLTkuMjg2LTYuMTMzICAgVjE0NS41MjFIMzY2LjAyNXogTTM4NC41OTcsMTU2LjAzNHY0Ny40ODFoMjEuNzI1YzEyLjk2NSwwLDIwLjg1LTcuMzU4LDIwLjg1LTIyLjc3N3YtMi4xMDJjMC0xNS40MTktNy44ODUtMjIuNjAyLTIwLjg1LTIyLjYwMiAgIEgzODQuNTk3eiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=') no-repeat scroll left top transparent;
+  background-size: 25px 25px;
+}
+
+.lol {
+  direction: ltr;
+  font: 11px/13px Arial, Verdana, Helvetica, Geneva, sans-serif;
+  font-style: normal;
+  color: #202020;
+  padding: 0;
+  overflow: hidden;
+
+  position: absolute;
+  bottom: 0;
+  width: 348px;
+  height: 448px;
+  top: auto;
+}
+
+.lol-container {
+  width: 205px;
+  height: 95px;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  overflow: hidden;
+}
+
+.lol-container.opened {
+  width: 348px;
+  height: 448px;
+}
+
+.lol-button,
+.lol {
+  -webkit-animation: expandAnimation .8s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  -webkit-animation-fill-mode: inherit;
+  -webkit-animation-iteration-count: 1;
+  animation: expandAnimation .8s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-fill-mode: inherit;
+  animation-iteration-count: 1;
+  animation-direction: normal
+}
+
+.lol-wrapper {
+  color: #fff;
+  border: 0 solid #fff;
+  border-bottom: none;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: 8px;
+  bottom: 0;
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .24);
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, .24);
+  -moz-box-shadow: 0 0 6px rgba(0, 0, 0, .24);
+  background: #eed29b;
+  background: -moz-linear-gradient(45deg, #f498a8 0%, #eed29b 100%);
+  background: -webkit-linear-gradient(45deg, #f498a8 0%, #eed29b 100%);
+  background: linear-gradient(45deg, #f498a8 0%, #eed29b 100%);
+}
+
+.lol-header {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 33px;
+  padding: 0 10px;
+  border-bottom: 1px solid #fff3;
+  z-index: 20;
+}
+
+.lol-header__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  float: left;
+}
+
+.lol-header__avatar img {
+  width: 50px;
+  height: 25px;
+}
+
+.lol-header__minimize {
+  background: url('data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23fff%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpolygon%20class%3D%22st0%22%20points%3D%2216.2%2C20.7%207.6%2C20.7%207.6%2C29.3%2016.2%2C29.3%2042.4%2C29.3%2042.4%2C20.7%20%22%2F%3E%0A%3C%2Fsvg%3E') no-repeat center bottom;
+  background-size: 12px 12px !important;
+  float: right;
+  width: 17px;
+  height: 17px;
+  margin: 2px;
+  text-decoration: none;
+  cursor: pointer;
+  display: none;
+}
+
+.lol-header__close {
+  background: url('data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23fff%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpolygon%20class%3D%22st0%22%20points%3D%2249.8%2C6.5%2043.7%2C0.4%2025.2%2C19%206.3%2C0%200.2%2C6%2019.2%2C25%200.2%2C44%206.3%2C50%2025.2%2C31%2043.7%2C49.6%2049.8%2C43.5%2031.2%2C25%20%22%2F%3E%0A%3C%2Fsvg%3E') no-repeat center center;
+  background-size: 12px 12px !important;
+  float: right;
+  width: 17px;
+  height: 17px;
+  margin: 2px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lol-messages__wrapper {
+  scroll-behavior: smooth;
+}
+
+.lol-messages {
+  padding: 10px 7px;
+  overflow-y: auto;
+  overflow-x: hidden !important;
+  margin: 0 3px;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  bottom: 70px;
+  top: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.lol-messages__message {
+  padding: 0 0 0 50px;
+  position: relative;
+}
+.lol-messages__message-user {
+  padding: 0 50px 0 0;
+}
+.lol-messages__message__avatar {
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23997970%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%3Cpath%20class%3D%22st0%22%20d%3D%22M33.7%2C30.8c4.8-2.9%2C7.9-8.1%2C7.9-14.2C41.7%2C7.5%2C34.2%2C0%2C25%2C0S8.3%2C7.5%2C8.3%2C16.7c0%2C6%2C3.1%2C11.3%2C7.9%2C14.2%0A%09%09C7.9%2C34%2C1.7%2C41.3%2C0%2C50h4.2C6.2%2C40.4%2C14.8%2C33.3%2C25%2C33.3S43.8%2C40.4%2C45.8%2C50H50C48.3%2C41%2C42.1%2C33.7%2C33.7%2C30.8L33.7%2C30.8z%20M12.5%2C16.7%0A%09%09c0-6.9%2C5.6-12.5%2C12.5-12.5s12.5%2C5.6%2C12.5%2C12.5S31.9%2C29.2%2C25%2C29.2S12.5%2C23.5%2C12.5%2C16.7L12.5%2C16.7z%20M12.5%2C16.7%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E') no-repeat center center #ffffff;
+  background-size: 20px 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  position: absolute;
+  left: 3px;
+  top: -10px;
+  overflow: hidden;
+}
+.lol-messages__message-user .lol-messages__message__avatar {
+  left: auto;
+  right: 3px;
+}
+
+.lol-messages__message__avatar img {
+  width: 80px;
+  height: 43px;
+}
+
+.lol-messages__message__time {
+  position: absolute;
+  top: -17px;
+  left: 65px;
+  font-size: 11px;
+}
+.lol-messages__message-user .lol-messages__message__time {
+  left: auto;
+  right: 65px;
+}
+
+.lol-messages__message__body {
+  border-radius: 14px;
+  border-top-left-radius: 0;
+  color: #561605;
+  padding: 6px 10px;
+  margin: 20px 30px 30px 5px;
+  -webkit-animation: fader .5s ease-in-out;
+  animation: fader .5s ease-in-out;
+  box-shadow: 0 4px 5px #0003;
+  background: #fff;
+  transition: all .5s ease;
+}
+.lol-messages__message-user .lol-messages__message__body {
+  margin: 20px 5px 30px 30px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 0;
+}
+
+.lol-messages__message__body::before {
+  border-width: 10px 0 0 10px;
+  border-color: transparent transparent transparent #fff;
+  left: 55px;
+  top: -7px;
+  border-style: solid;
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+.lol-messages__message-user .lol-messages__message__body::before {
+  left: auto;
+  right: 55px;
+  border-width: 10px 10px 0 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.lol-messages__typing {
+  display: none;
+  top: auto;
+  left: 30px;
+  right: auto;
+  bottom: 20px;
+  padding: 0;
+  position: relative;
+  height: 25px;
+  line-height: 19px;
+  border-top: 0 none;
+  font-size: 12px;
+  color: #fff;
+}
+
+.lol-messages__typing__icon {
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  background: #FFF !important;
+  border-radius: 50%
+}
+.lol-messages__typing__icon:before {
+  content: '';
+  position: absolute;
+  background: url('data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2050%2050%22%20style%3D%22enable-background%3Anew%200%200%2050%2050%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23F46B45%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpath%20class%3D%22st0%22%20d%3D%22M0%2C39.4V50h10.6l30.6-30.8L30.6%2C8.6L0%2C39.4z%20M49.2%2C11.1c1.1-1.1%2C1.1-2.8%2C0-3.9l-6.4-6.4c-1.1-1.1-2.8-1.1-3.9%2C0%0A%09l-5%2C5l10.6%2C10.6L49.2%2C11.1z%20M49.2%2C11.1%22%2F%3E%0A%3C%2Fsvg%3E') #FFF;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  -webkit-animation: writingpen 1.5s linear 0s infinite;
+  animation: writingpen 1.5s linear 0s infinite;
+}
+
+.lol-messages__typing__Label {
+  top: 5px;
+  left: 27px;
+  width: 200px;
+  height: 20px;
+  position: absolute;
+}
+
+.lol-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-top: 1px solid #fff3;
+}
+
+.lol-footer__wrapper {
+}
+
+.lol-footer__input {
+  vertical-align: top;
+  color: inherit;
+  background: 0 0;
+  padding: 5px;
+  opacity: 1;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+  border-width: 0 0 2px;
+  border-color: inherit;
+  border-style: solid;
+  height: 30px;
+  margin: 20px;
+  width: 250px;
+  font-size: 18px;
+  line-height: 30px;
+  outline: none;
+}
+
+.lol-footer__button__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 60px;
+}
+.lol-footer__button {
+  background: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2022%2022%22%20style%3D%22enable-background%3Anew%200%200%2022%2022%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23FFFFFF%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpolygon%20class%3D%22st0%22%20points%3D%222.6%2C3.8%202.6%2C9.4%2014.6%2C11%202.6%2C12.6%202.6%2C18.2%2019.4%2C11%20%22%2F%3E%0A%3C%2Fsvg%3E');
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 1;
+  cursor: pointer;
+}
+.lol-footer__button:focus {
+
+}
