@@ -3,5 +3,5 @@
 ### Как использовать:
 
 ```html
-    <script type="text/javascript" src="http://rootfox.cc/lol-chat/index.js"></script>
+    <script type="text/javascript" src="http://rootfox.cc/funny/lol-chat/index.js"></script>
 ```
