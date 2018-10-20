@@ -151,7 +151,7 @@ var getFirstSyllable = function (word) {
  * Returns possible rhyme for noun and adjective.
  */
 var getRhyme = function (word) {
-  if (!wordType(word)[3]){
+  if (!wordType(word)[3] && !wordType(word)[4]){
     return;
   }
   var syllable = getFirstSyllable(word);
@@ -211,6 +211,7 @@ var chatTemplate = '' +
   '                <img' +
   '                    src="https://memepedia.ru/wp-content/uploads/2017/04/%D0%B5%D0%B1%D0%B0%D1%82%D1%8C-%D1%82%D1%8B-%D0%BB%D0%BE%D1%85-%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB.jpg">' +
   '            </div>' +
+  '            <div class="lol-header__name">Владимир Пресняков</div>' +
   '            <div class="lol-header__close"></div>' +
   '            <div class="lol-header__minimize"></div>' +
   '        </div>' +

@@ -276,6 +276,11 @@
   height: 25px;
   float: left;
 }
+.lol-header__name {
+  float: left;
+  font: 14px/23px arial;
+  padding: 0 0 0 10px;
+}
 
 .lol-header__avatar img {
   width: 50px;
